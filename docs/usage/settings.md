@@ -147,7 +147,7 @@ Once you have your secret files, *pydantic* supports loading it in two ways:
 ```py
 class Settings(BaseSettings):
     ...
-    database_password: str
+    db_password: str
 
     class Config:
         secrets_dir = '/var/run'
